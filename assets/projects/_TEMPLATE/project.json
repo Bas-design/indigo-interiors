@@ -1,0 +1,25 @@
+{
+  "title": "Project Name Shown On The Site",
+  "category": "living",
+  "categoryLabel": "Living Spaces",
+  "location": "Suburb, NSW",
+  "year": "2026",
+  "cover": "01-cover-photo.jpg",
+  "summary": "One or two sentences shown on the gallery tile and at the top of the project page.",
+  "brief": [
+    "First paragraph about the project — the client, the home, what they asked for.",
+    "Second paragraph if you need one. Add more lines like this (each in quotes, separated by commas) for more paragraphs. Delete lines you don't need."
+  ],
+  "photos": [
+    {
+      "image": "01-cover-photo.jpg",
+      "heading": "Short Heading For This Photo",
+      "text": "A paragraph about this photo — what was done in this room, materials, choices made. This text appears beside/under the photo."
+    },
+    {
+      "image": "02-another-photo.jpg",
+      "heading": "Another Heading",
+      "text": "Copy this whole block (from { to }, including the comma between blocks) for each photo in the project."
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Indigo Interiors</title>
+<meta name="description" content="Book a consultation with Mia Szukalski of Indigo Interiors — interior decorating across Greater Sydney.">
+<link rel="canonical" href="https://indigointeriors.com.au/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Indigo Interiors">
+<meta property="og:title" content="Contact — Indigo Interiors">
+<meta property="og:description" content="Book a consultation with Mia Szukalski of Indigo Interiors — interior decorating across Greater Sydney.">
+<meta property="og:url" content="https://indigointeriors.com.au/contact.html">
+<meta property="og:image" content="https://indigointeriors.com.au/assets/img/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="assets/Indigo-mark.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Poppins (body) + Bodoni Moda ITALIC only (OFL). Romans are Bodidota,
+     self-hosted from assets/; see css/style.css header. -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300&family=Bodoni+Moda:ital,opsz,wght@1,6..96,400..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-grid">
+    <nav class="nav nav--left" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+    </nav>
+    <a class="brand" href="index.html?reveal=1" aria-label="Indigo Interiors home — plays the intro">
+      <img class="brand__mark" src="assets/Indigo-mark.svg" alt="Indigo Interiors">
+    </a>
+    <nav class="nav nav--right" aria-label="Primary">
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="mobile-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow" data-reveal>Say Hello</p>
+      <h1 data-reveal>Contact</h1>
+      <hr class="rule rule--center" data-reveal>
+      <p class="lede" data-reveal>Tell us a little about your home and what you’re dreaming of. Mia personally reads every enquiry.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:1rem">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="contact-info" data-reveal>
+          <h3>Studio</h3>
+          <p>Greater Sydney, NSW</p>
+          <p>Serving homes across all of Greater Sydney</p>
+
+          <h3>Email</h3>
+          <p><a href="mailto:mia@indigointeriors.com.au">mia@indigointeriors.com.au</a></p>
+
+          <h3>Phone</h3>
+          <p><a href="tel:+61419437772">+61 419 437 772</a></p>
+
+          <h3>Hours</h3>
+          <p>Monday – Friday · 9am – 5pm</p>
+          <p>Consultations by appointment</p>
+
+          <blockquote class="pull">“The best time to start is the moment a room stops feeling like you.”</blockquote>
+        </div>
+
+        <div data-reveal>
+          <!-- LIVE: submissions POST to Formspree, which emails them to
+               mia@indigointeriors.com.au. Anti-spam is the honeypot field
+               below (active). Turnstile is still to come: paste the site
+               key into data-turnstile-key once the domain is pointed at the
+               host, since Turnstile keys are domain-locked. Clearing
+               data-endpoint returns the form to demo mode (validates and
+               shows success, sends nothing). See FORM-SETUP.md. -->
+          <form id="contactForm" novalidate
+                data-endpoint="https://formspree.io/f/mvkpedog"
+                data-turnstile-key="">
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="cf-name">Name</label>
+                <input id="cf-name" name="name" type="text" autocomplete="name" required>
+              </div>
+              <div class="form-field">
+                <label for="cf-email">Email</label>
+                <input id="cf-email" name="email" type="email" autocomplete="email" required>
+              </div>
+              <div class="form-field">
+                <label for="cf-phone">Phone (optional)</label>
+                <input id="cf-phone" name="phone" type="tel" autocomplete="tel">
+              </div>
+              <div class="form-field">
+                <label for="cf-suburb">Suburb</label>
+                <input id="cf-suburb" name="suburb" type="text">
+              </div>
+              <div class="form-field form-field--full">
+                <label for="cf-service">I’m interested in</label>
+                <select id="cf-service" name="service">
+                  <option>Colour &amp; Finishes Selection</option>
+                  <option>Materials Specification</option>
+                  <option>Wallpaper &amp; Painting</option>
+                  <option>Home Organisation</option>
+                  <option>Furniture &amp; Styling</option>
+                  <option>Design Consultation</option>
+                  <option>Not sure yet — let’s talk</option>
+                </select>
+              </div>
+              <div class="form-field form-field--full">
+                <label for="cf-message">Tell us about your project</label>
+                <textarea id="cf-message" name="message" rows="5" required></textarea>
+              </div>
+              <!-- honeypot: invisible to humans; bots that fill it are dropped -->
+              <div class="form-field form-field--trap" aria-hidden="true">
+                <label for="cf-website">Website</label>
+                <input id="cf-website" name="website" type="text" tabindex="-1" autocomplete="off">
+              </div>
+            </div>
+            <!-- Turnstile captcha renders here once data-turnstile-key is set -->
+            <div id="captchaBox" class="form-captcha"></div>
+            <p class="form-note">We usually respond within two business days.</p>
+            <button class="btn btn--solid" type="submit">Send Enquiry</button>
+            <div class="form-success" role="status">
+              Thank you — your enquiry is on its way. Mia will be in touch soon.
+            </div>
+            <div class="form-error" role="alert">
+              Something went wrong sending your enquiry. Please try again, or
+              email us directly at
+              <a href="mailto:mia@indigointeriors.com.au">mia@indigointeriors.com.au</a>.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html">
+          <img class="brand__mark" src="assets/Indigo-mark.svg" alt="">
+          <span class="brand__name">INDIGO<br>INTERIORS</span>
+        </a>
+        <p class="footer-tagline">Elegant, personal interiors for Greater Sydney — composed by Mia Szukalski.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in Touch</h4>
+        <ul>
+          <li><a href="mailto:mia@indigointeriors.com.au">mia@indigointeriors.com.au</a></li>
+          <li><a href="tel:+61419437772">+61 419 437 772</a></li>
+          <li>Greater Sydney, NSW</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Indigo Interiors. All rights reserved.</span>
+      <span>Interior Decorating · Mia Szukalski</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

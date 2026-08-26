@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" class="reveal-active">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Indigo Interiors — Interior Decorating, Greater Sydney</title>
+<meta name="description" content="Indigo Interiors is the studio of renowned interior decorator Mia Szukalski, creating elegant, personal interiors across Greater Sydney.">
+<!-- SEO: domain is indigointeriors.com.au (also in sitemap.xml, robots.txt,
+     and the og:/canonical tags on every page) -->
+<link rel="canonical" href="https://indigointeriors.com.au/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Indigo Interiors">
+<meta property="og:title" content="Indigo Interiors — Interior Decorating, Greater Sydney">
+<meta property="og:description" content="Elegant, personal interiors across Greater Sydney — the studio of interior decorator Mia Szukalski.">
+<meta property="og:url" content="https://indigointeriors.com.au/">
+<meta property="og:image" content="https://indigointeriors.com.au/assets/img/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Indigo Interiors",
+  "description": "Boutique interior decorating studio creating refined, personal spaces across Greater Sydney.",
+  "url": "https://indigointeriors.com.au/",
+  "image": "https://indigointeriors.com.au/assets/img/hero.jpg",
+  "logo": "https://indigointeriors.com.au/assets/Indigo-mark.svg",
+  "email": "mia@indigointeriors.com.au",
+  "telephone": "+61419437772",
+  "founder": { "@type": "Person", "name": "Mia Szukalski" },
+  "foundingDate": "2017",
+  "areaServed": { "@type": "Place", "name": "Greater Sydney, NSW, Australia" },
+  "address": { "@type": "PostalAddress", "addressRegion": "NSW", "addressCountry": "AU" },
+  "sameAs": []
+}
+</script>
+<link rel="icon" type="image/svg+xml" href="assets/Indigo-mark.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Poppins (body) + Bodoni Moda ITALIC only (OFL). Romans are Bodidota,
+     self-hosted from assets/; see css/style.css header. -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300&family=Bodoni+Moda:ital,opsz,wght@1,6..96,400..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<noscript>
+  <style>
+    html.reveal-active .fade-on-reveal { opacity: 1 !important; transform: none !important; }
+    html.reveal-active .site-header { opacity: 1 !important; transform: none !important; }
+    #ovl { display: none !important; }
+  </style>
+</noscript>
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header class="site-header">
+  <div class="container header-grid">
+    <nav class="nav nav--left" aria-label="Primary">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="services.html">Services</a>
+    </nav>
+    <a class="brand" href="index.html?reveal=1" aria-label="Indigo Interiors home — plays the intro">
+      <img class="brand__mark" src="assets/Indigo-mark.svg" alt="Indigo Interiors">
+    </a>
+    <nav class="nav nav--right" aria-label="Primary">
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="mobile-nav" aria-label="Primary">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <!-- This backdrop is also the backdrop of the logo reveal (the overlay is
+         transparent), so it carries no fade-on-reveal. The slideshow strip
+         fades in ~3s after load and crossfades between interiors every 12s. -->
+    <div class="hero__media">
+      <div class="hero__ph"></div>
+      <div class="hero__slides">
+        <!-- Temporary stock photos (Pexels) — swap srcs for real photography.
+             First slide is the whitest image so the indigo reveal animation
+             stays readable as the backdrop fades in beneath it. -->
+        <img class="hero__slide is-active" src="assets/img/hero-2.jpg" alt="">
+        <img class="hero__slide" src="assets/img/hero.jpg" alt="">
+        <img class="hero__slide" src="assets/img/hero-3.jpg" alt="">
+        <img class="hero__slide" src="assets/img/hero-4.jpg" alt="">
+      </div>
+      <!-- white wash while the reveal plays; swaps for the dark shade
+           (body.revealed) once the images go full-opacity -->
+      <div class="hero__scrim"></div>
+      <div class="hero__shade"></div>
+    </div>
+    <div class="container">
+      <div class="hero__inner">
+        <h1 class="hero__title fade-on-reveal" style="--d:.3s">Creating
+          <span class="hero__typed"><span id="typedWord">elegant</span><span class="hero__caret"></span></span>
+          interior designs</h1>
+        <p class="hero__sub fade-on-reveal" style="--d:.55s">in Greater Sydney for over 10 years</p>
+      </div>
+    </div>
+    <!-- slide arrows — tablet/desktop only (hidden on mobile via CSS) -->
+    <button class="hero__arrow hero__arrow--prev fade-on-reveal" style="--d:.9s" aria-label="Previous image">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M15 4 L7 12 L15 20"/></svg>
+    </button>
+    <button class="hero__arrow hero__arrow--next fade-on-reveal" style="--d:.9s" aria-label="Next image">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M9 4 L17 12 L9 20"/></svg>
+    </button>
+    <div class="scroll-hint fade-on-reveal" style="--d:.8s">Scroll</div>
+  </section>
+
+  <!-- ===== About Mia ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="portrait-frame" data-reveal>
+          <img class="ph__photo" src="assets/img/portrait.jpg" alt="Mia Szukalski">
+        </div>
+        <div>
+          <p class="eyebrow" data-reveal>The Decorator</p>
+          <h2 data-reveal>Mia Szukalski</h2>
+          <hr class="rule" data-reveal>
+          <p data-reveal>Mia discovered her passion for design while building her own home — and never looked back. Leaving a career in Information Technology, she retrained as an interior decorator and founded Indigo Interiors in 2017: a boutique design studio dedicated to creating refined, personal spaces that reflect the people who live in them.</p>
+          <blockquote class="pull" data-reveal>“Guided by style, defined by you.”</blockquote>
+          <p data-reveal>Drawing on design influences gathered from her travels and adapted to Australian architecture and lifestyle, Mia works with homeowners and property developers alike — with creativity, clarity, and care, every detail thoughtfully considered.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Services preview ===== -->
+  <section class="section section--mist">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <p class="eyebrow" data-reveal>What We Do</p>
+        <h2 data-reveal>Services</h2>
+        <hr class="rule rule--center" data-reveal>
+        <p data-reveal>Every service is tailored to the project at hand — combined or standalone, always considered.</p>
+      </div>
+      <div class="card-grid">
+        <article class="card" data-reveal style="--d:0s">
+          <span class="card__num">01</span>
+          <h3>Colour &amp; Finishes</h3>
+          <p>Whole-home colour schemes, paint specification, and finishes that tie every room together.</p>
+        </article>
+        <article class="card" data-reveal style="--d:.1s">
+          <span class="card__num">02</span>
+          <h3>Materials Specification</h3>
+          <p>Curated selections of fabrics, stone, timber and hardware — documented and ready to procure.</p>
+        </article>
+        <article class="card" data-reveal style="--d:.2s">
+          <span class="card__num">03</span>
+          <h3>Wallpaper &amp; Painting</h3>
+          <p>Statement walls to full repaints, specified and managed with trusted trades from start to finish.</p>
+        </article>
+        <article class="card" data-reveal style="--d:.3s">
+          <span class="card__num">04</span>
+          <h3>Home Organisation</h3>
+          <p>Beautiful, practical systems for the spaces you use every day — wardrobes, pantries, studies.</p>
+        </article>
+      </div>
+      <p class="text-center" style="margin-top:3rem" data-reveal>
+        <a class="btn" href="services.html">Explore All Services</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Featured work strip ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <p class="eyebrow" data-reveal>Recent Work</p>
+        <h2 data-reveal>A Glimpse Inside</h2>
+        <hr class="rule rule--center" data-reveal>
+      </div>
+      <!-- First 3 projects from assets/projects/, rendered by js/projects.js;
+           each tile links to its project page -->
+      <div class="gallery-grid" data-projects-featured="3"></div>
+      <p class="text-center" style="margin-top:3rem" data-reveal>
+        <a class="btn" href="gallery.html">View Full Gallery</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Testimonials ===== -->
+  <!-- section--pattern lays a faint repeat of the logo mark over the
+       background (assets/pattern-mark.svg). Trial — remove the class to
+       drop it; see "Patterned section" in css/style.css. -->
+  <section class="section section--indigo section--pattern">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <p class="eyebrow" data-reveal>Kind Words</p>
+        <h2 data-reveal>From Our Clients</h2>
+      </div>
+      <div class="testimonial-grid">
+        <blockquote class="testimonial" data-reveal style="--d:0s">
+          <p>“Mia understood our home better than we did. Every colour, every fabric — it all just works. We can’t imagine the house any other way.”</p>
+          <cite>Sarah &amp; James · Harrington Park</cite>
+        </blockquote>
+        <blockquote class="testimonial" data-reveal style="--d:.12s">
+          <p>“The wallpaper and paint scheme completely transformed our living areas. Professional, warm, and worth every cent.”</p>
+          <cite>Priya · Oran Park</cite>
+        </blockquote>
+        <blockquote class="testimonial" data-reveal style="--d:.24s">
+          <p>“From the first consultation to the final cushion, the process was effortless. Our pantry and wardrobes finally make sense.”</p>
+          <cite>The Nguyen Family · Camden</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="section section--sand cta-band">
+    <div class="container--narrow">
+      <p class="eyebrow" data-reveal>Begin</p>
+      <h2 data-reveal>Your home is ready for its next chapter.</h2>
+      <p data-reveal>Book a consultation and let’s talk about the space you’ve been imagining.</p>
+      <a class="btn btn--solid" href="contact.html" data-reveal>Book a Consultation</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html">
+          <img class="brand__mark" src="assets/Indigo-mark.svg" alt="">
+          <span class="brand__name">INDIGO<br>INTERIORS</span>
+        </a>
+        <p class="footer-tagline">Elegant, personal interiors for Greater Sydney — composed by Mia Szukalski.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in Touch</h4>
+        <ul>
+          <li><a href="mailto:mia@indigointeriors.com.au">mia@indigointeriors.com.au</a></li>
+          <li><a href="tel:+61419437772">+61 419 437 772</a></li>
+          <li>Greater Sydney, NSW</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Indigo Interiors. All rights reserved.</span>
+      <span>Interior Decorating · Mia Szukalski</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== Logo reveal overlay ===== -->
+<!-- Transparent overlay: the animation plays directly over the hero's own
+     background, so there is no white flash — the overlay simply crossfades
+     into the identical, statically-positioned hero logo underneath. -->
+<div id="ovl" style="position:fixed; inset:0; background:transparent; z-index:500; overflow:hidden; display:flex; align-items:center; justify-content:center;">
+  <div id="stageOuter" style="flex:0 0 auto; position:relative;">
+    <div id="stage" style="position:relative; width:1006.75px; height:1097.71px;">
+
+      <svg viewBox="0 0 1006.75 1097.71" width="1006.75" height="1097.71" style="position:absolute; left:0; top:0; overflow:visible; transform:scale(0.985); transform-origin:503.37px 726.35px;" xmlns="http://www.w3.org/2000/svg">
+        <!-- arch (draws from right) -->
+        <path id="archP" d="M903.54,370.87C903.54,206.58,770.91,73.64,607,73.64S310.46,206.58,310.46,370.87" transform="translate(-103.63 -42.64)" fill="none" stroke="#4f3f68" stroke-miterlimit="10" stroke-width="62" stroke-dasharray="950 950" stroke-dashoffset="950"></path>
+        <!-- fanlight (hidden until its reveal, wipes in left-to-right) -->
+        <clipPath id="fanClip"><rect id="fanClipR" x="295" y="110" width="0" height="230"></rect></clipPath>
+        <g id="fanG" opacity="0" clip-path="url(#fanClip)">
+          <path d="M602.59,370.86H811.3c0-112.83-91.47-204.3-204.3-204.3S402.7,258,402.7,370.86H602.26l.08.15Zm-74.21-146,5.38-20.08a192.78,192.78,0,0,1,53.71-13.17L602.78,207v99.28a64.23,64.23,0,0,0-23.84,6.22Zm157.68-.1-50.7,87.81a64.28,64.28,0,0,0-23.58-6.33V206.45l14.79-14.79A192.59,192.59,0,0,1,680.76,205ZM669.31,353.19a64,64,0,0,0-4.18-10.91l91.54-52.85,17.39,4.66a148.69,148.69,0,0,1,12.24,59.1Zm87.79-88.9-4.6,17.15L660.6,334.5a65.1,65.1,0,0,0-17.44-17.38l50.74-87.89,21.2-5.68A171,171,0,0,1,757.1,264.29ZM499,223.46l21.44,5.74,50.66,87.74a65,65,0,0,0-17.67,17.47L462,281.61l-4.77-17.79A171.11,171.11,0,0,1,499,223.46Zm-59.15,70.77,17.74-4.76,91.3,52.71a64.08,64.08,0,0,0-4.23,11h-117A148.73,148.73,0,0,1,439.88,294.23Z" transform="translate(-103.63 -42.64)" fill="#ccbb92"></path>
+        </g>
+        <!-- gold seam -->
+        <rect id="seamR" x="498.87" y="354.99" width="9" height="612.1" fill="#ccbb92" style="transform-origin:503.37px 354.99px; transform:scaleY(0);"></rect>
+        <!-- final open doors + handles (geometry reference, unused at runtime) -->
+        <g id="doorsOpenG" opacity="0">
+          <polygon points="401.61 441.7 273.61 369.71 273.61 725.72 273.61 1081.71 401.61 1009.73 400.12 725.72 401.61 441.7" fill="#4f3f68"></polygon>
+          <polygon points="605.14 441.7 733.14 369.71 733.14 725.72 733.14 1081.71 605.14 1009.73 606.63 725.72 605.14 441.7" fill="#4f3f68"></polygon>
+          <rect x="363.07" y="763.72" width="14.67" height="65.33" fill="#ccbb92"></rect>
+          <rect x="732.64" y="806.37" width="14.67" height="65.33" transform="translate(1376.31 1635.43) rotate(-180)" fill="#ccbb92"></rect>
+        </g>
+        <!-- pillars (the split "I"s) -->
+        <g id="pillarL" opacity="0">
+          <polygon points="237.83 354.99 237.83 1097.71 0 1097.71 0 1086.24 140.82 1086.24 140.82 366.46 0 366.46 0 354.99 237.83 354.99" fill="#4f3f68"></polygon>
+        </g>
+        <g id="pillarR" opacity="0">
+          <polygon points="768.92 354.99 768.92 1097.71 1006.75 1097.71 1006.75 1086.24 865.93 1086.24 865.93 366.46 1006.75 366.46 1006.75 354.99 768.92 354.99" fill="#4f3f68"></polygon>
+        </g>
+      </svg>
+
+      <!-- closed doors (HTML for real 3D swing) -->
+      <div id="doorsWrap" style="position:absolute; left:0; top:0; width:1006.75px; height:1097.71px; pointer-events:none; transform:scale(0.985); transform-origin:503.37px 726.35px;">
+        <div id="doorHL" style="position:absolute; left:273.61px; top:369.71px; width:229.9px; height:712px; background:#4f3f68; transform-origin:left center; transform:scaleX(0);">
+          <div id="hndL" style="position:absolute; right:24px; top:394px; width:14.7px; height:65.3px; background:#ccbb92; opacity:0;"></div>
+        </div>
+        <div id="doorHR" style="position:absolute; left:503.47px; top:369.71px; width:229.9px; height:712px; background:#4f3f68; transform-origin:right center; transform:scaleX(0);">
+          <div id="hndR" style="position:absolute; left:24px; top:394px; width:14.7px; height:65.3px; background:#ccbb92; opacity:0;"></div>
+        </div>
+      </div>
+
+      <!-- Typography layer: static SVG outlines of the wordmark, generated
+           from the licensed desktop font by tools/build-wordmark.js. No
+           webfont is loaded — see README "Fonts & licensing". Do not hand-
+           edit the block below; re-run the generator instead. -->
+      <div id="textWrap" style="position:absolute; left:0; top:0; width:1006.75px; height:1097.71px; pointer-events:none;">
+      <!-- BEGIN GENERATED WORDMARK (tools/build-wordmark.js) -->
+      <div id="rowTop" style="position:absolute; left:0; top:0; width:4153.99px; height:770.44px; opacity:0;">
+      <svg width="4153.99" height="770.44" viewBox="53.56 -751.9 4153.99 770.44" style="display:block; overflow:visible; max-width:none;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+        <path id="i1T" d="M53.56-733.36L366.68-733.36L366.68-722.03L273.98-722.03L273.98-11.33L366.68-11.33L366.68 0L53.56 0L53.56-11.33L146.26-11.33L146.26-722.03L53.56-722.03L53.56-733.36Z" fill="#4f3f68"></path>
+        <g id="ndigoT"><path d="M510.88-733.36L709.67-733.36L1072.23-216.30L1072.23-722.03L979.53-722.03L979.53-733.36L1176.26-733.36L1176.26-722.03L1083.56-722.03L1083.56 8.24L1075.32 8.24L614.91-646.84L614.91-11.33L708.64-11.33L708.64 0L510.88 0L510.88-11.33L603.58-11.33L603.58-722.03L510.88-722.03L510.88-733.36ZM2015.71-353.29L2015.71-353.29Q2015.71-288.40 1990.99-223.00Q1966.27-157.59 1912.71-104.03L1912.71-104.03Q1860.18-50.47 1788.08-23.18Q1715.98 4.12 1627.40 4.12L1627.40 4.12Q1598.56 4.12 1567.14 2.06Q1535.73 0 1514.10 0L1514.10 0L1310.16 0L1310.16-11.33L1402.86-11.33L1402.86-722.03L1310.16-722.03L1310.16-733.36L1505.86-733.36Q1528.52-733.36 1563.03-735.42Q1597.53-737.48 1627.40-737.48L1627.40-737.48Q1703.62-737.48 1776.24-709.67Q1848.85-681.86 1904.47-623.15L1904.47-623.15Q1960.09-565.47 1987.90-496.46Q2015.71-427.45 2015.71-353.29ZM1530.58-721L1530.58-12.36Q1556.33-10.30 1582.08-8.76Q1607.83-7.21 1633.58-7.21L1633.58-7.21Q1691.26-7.21 1735.55-26.78Q1779.84-46.35 1809.71-89.09Q1839.58-131.84 1854.52-199.31Q1869.45-266.77 1869.45-362.56L1869.45-362.56Q1869.45-469.68 1854-537.14Q1838.55-604.61 1808.68-644.78L1808.68-644.78Q1778.81-685.98 1732.98-706.07Q1687.14-726.15 1622.25-726.15L1622.25-726.15Q1612.98-726.15 1600.62-725.63Q1588.26-725.12 1573.84-724.09L1573.84-724.09Q1559.42-723.06 1548.09-722.03Q1536.76-721 1530.58-721L1530.58-721ZM2191.84-733.36L2504.96-733.36L2504.96-722.03L2412.26-722.03L2412.26-11.33L2504.96-11.33L2504.96 0L2191.84 0L2191.84-11.33L2284.54-11.33L2284.54-722.03L2191.84-722.03L2191.84-733.36ZM3183.73-706.58L3183.73-706.58Q3195.06-706.58 3201.24-710.70Q3207.42-714.82 3214.63-726.15L3214.63-726.15L3222.87-726.15L3222.87-511.91L3214.63-511.91Q3187.85-627.27 3134.29-683.92Q3080.73-740.57 3003.48-740.57L3003.48-740.57Q2905.63-740.57 2858.25-668.47L2858.25-668.47Q2811.90-597.40 2811.90-358.44L2811.90-358.44Q2811.90-283.25 2814.99-234.33Q2818.08-185.40 2823.75-152.96Q2829.41-120.51 2837.65-99.91Q2845.89-79.31 2856.19-60.77L2856.19-60.77Q2894.30 7.21 3003.48 7.21L3003.48 7.21Q3041.59 7.21 3070.43 1.54Q3099.27-4.12 3119.36-18.54Q3139.44-32.96 3149.74-57.68Q3160.04-82.40 3160.04-121.54L3160.04-121.54L3160.04-270.89L3045.71-270.89L3045.71-282.22L3381.49-282.22L3381.49-270.89L3287.76-270.89L3287.76 0L3279.52 0Q3274.37-15.45 3263.04-24.72Q3251.71-33.99 3232.14-33.99L3232.14-33.99Q3217.72-33.99 3199.70-27.30Q3181.67-20.60 3152.83-8.24L3152.83-8.24Q3123.99 4.12 3088.97 11.33Q3053.95 18.54 3010.69 18.54L3010.69 18.54Q2936.53 18.54 2872.16-7.21Q2807.78-32.96 2760.40-85.49L2760.40-85.49Q2665.64-188.49 2665.64-351.23L2665.64-351.23Q2665.64-434.66 2691.91-506.25Q2718.17-577.83 2770.70-636.54L2770.70-636.54Q2824.26-695.25 2884.52-723.58Q2944.77-751.90 3002.45-751.90L3002.45-751.90Q3032.32-751.90 3058.59-744.69Q3084.85-737.48 3107.00-729.24Q3129.14-721 3148.20-713.79Q3167.25-706.58 3183.73-706.58ZM4207.55-366.68L4207.55-366.68Q4207.55-286.34 4177.68-215.78Q4147.81-145.23 4098.37-93.22Q4048.93-41.20 3985.07-11.33Q3921.21 18.54 3853.23 18.54L3853.23 18.54Q3786.28 18.54 3722.42-10.81Q3658.56-40.17 3609.12-91.67Q3559.68-143.17 3529.30-213.72Q3498.91-284.28 3498.91-366.68L3498.91-366.68Q3498.91-449.08 3528.27-519.63Q3557.62-590.19 3607.06-641.69Q3656.50-693.19 3720.36-722.55Q3784.22-751.90 3853.23-751.90L3853.23-751.90Q3922.24-751.90 3986.10-722.55Q4049.96-693.19 4099.40-641.69Q4148.84-590.19 4178.20-519.63Q4207.55-449.08 4207.55-366.68ZM3853.23 7.21L3853.23 7.21Q3911.94 7.21 3951.08-12.88Q3990.22-32.96 4013.91-74.16L4013.91-74.16Q4027.30-96.82 4036.57-130.81Q4045.84-164.80 4050.99-203.94Q4056.14-243.08 4058.72-285.31Q4061.29-327.54 4061.29-366.68L4061.29-366.68Q4061.29-406.85 4058.72-450.11Q4056.14-493.37 4049.96-534.06Q4043.78-574.74 4033.48-609.76Q4023.18-644.78 4007.73-668.47L4007.73-668.47Q3984.04-706.58 3946.45-723.58Q3908.85-740.57 3852.20-740.57L3852.20-740.57Q3802.76-740.57 3767.74-726.66Q3732.72-712.76 3709.03-683.92L3709.03-683.92Q3690.49-662.29 3678.65-627.27Q3666.80-592.25 3659.08-550.02Q3651.35-507.79 3648.26-460.41Q3645.17-413.03 3645.17-366.68L3645.17-366.68Q3645.17-322.39 3647.75-277.58Q3650.32-232.78 3657.02-191.58Q3663.71-150.38 3674.53-116.39Q3685.34-82.40 3700.79-60.77L3700.79-60.77Q3724.48-26.78 3761.56-9.79Q3798.64 7.21 3853.23 7.21Z" fill="#4f3f68"></path></g>
+      </svg>
+      </div>
+      <div id="rowBot" style="position:absolute; left:0; top:0; width:6229.44px; height:770.44px; opacity:0;">
+      <svg width="6229.44" height="770.44" viewBox="53.56 -751.9 6229.44 770.44" style="display:block; overflow:visible; max-width:none;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+        <g id="interT"><path d="M53.56-733.36L366.68-733.36L366.68-722.03L273.98-722.03L273.98-11.33L366.68-11.33L366.68 0L53.56 0L53.56-11.33L146.26-11.33L146.26-722.03L53.56-722.03L53.56-733.36ZM510.88-733.36L709.67-733.36L1072.23-216.30L1072.23-722.03L979.53-722.03L979.53-733.36L1176.26-733.36L1176.26-722.03L1083.56-722.03L1083.56 8.24L1075.32 8.24L614.91-646.84L614.91-11.33L708.64-11.33L708.64 0L510.88 0L510.88-11.33L603.58-11.33L603.58-722.03L510.88-722.03L510.88-733.36ZM1291.62-733.36L1930.22-733.36L1930.22-486.16L1921.98-486.16Q1901.38-603.58 1839.07-662.81Q1776.75-722.03 1686.11-722.03L1686.11-722.03L1674.78-722.03L1674.78-11.33L1767.48-11.33L1767.48 0L1454.36 0L1454.36-11.33L1547.06-11.33L1547.06-722.03L1534.70-722.03Q1440.97-722.03 1379.17-659.72Q1317.37-597.40 1299.86-486.16L1299.86-486.16L1291.62-486.16L1291.62-733.36ZM2049.70-733.36L2597.66-733.36L2597.66-556.20L2589.42-556.20Q2572.94-603.58 2551.31-635.51Q2529.68-667.44 2502.90-687.01Q2476.12-706.58 2444.70-714.31Q2413.29-722.03 2377.24-722.03L2377.24-722.03L2270.12-722.03L2270.12-384.19L2293.81-384.19Q2333.98-384.19 2362.31-394.49Q2390.63-404.79 2409.17-423.85Q2427.71-442.90 2438.01-469.17Q2448.31-495.43 2451.40-527.36L2451.40-527.36L2459.64-527.36L2459.64-226.60L2451.40-226.60Q2444.19-296.64 2407.11-334.75Q2370.03-372.86 2290.72-372.86L2290.72-372.86L2270.12-372.86L2270.12-11.33L2427.71-11.33Q2511.14-11.33 2563.67-57.68Q2616.20-104.03 2649.16-206L2649.16-206L2657.40-206L2657.40 0L2049.70 0L2049.70-11.33L2142.40-11.33L2142.40-722.03L2049.70-722.03L2049.70-733.36ZM3375.31-547.96L3375.31-547.96Q3375.31-489.25 3325.87-448.56Q3276.43-407.88 3193-389.34L3193-389.34L3193-385.22Q3242.44-376.98 3281.58-363.07Q3320.72-349.17 3346.47-325.48L3346.47-325.48Q3361.92-311.06 3372.74-294.58Q3383.55-278.10 3390.25-255.44Q3396.94-232.78 3400.03-201.88Q3403.12-170.98 3403.12-126.69L3403.12-126.69Q3403.12-88.58 3406.73-64.89Q3410.33-41.20 3417.54-28.32Q3424.75-15.45 3435.57-11.33Q3446.38-7.21 3461.83-7.21L3461.83-7.21Q3478.31-7.21 3490.16-12.36Q3502-17.51 3519.51-31.93L3519.51-31.93L3527.75-20.60Q3506.12-4.12 3486.55 2.06Q3466.98 8.24 3435.05 8.24L3435.05 8.24Q3394.88 8.24 3363.47-1.54Q3332.05-11.33 3310.42-33.48Q3288.79-55.62 3276.95-91.16Q3265.10-126.69 3265.10-179.22L3265.10-179.22Q3265.10-222.48 3263.56-251.84Q3262.01-281.19 3257.89-300.25Q3253.77-319.30 3248.11-330.63Q3242.44-341.96 3233.17-350.20L3233.17-350.20Q3202.27-380.07 3143.56-380.07L3143.56-380.07L3027.17-380.07L3027.17-11.33L3120.90-11.33L3120.90 0L2806.75 0L2806.75-11.33L2899.45-11.33L2899.45-722.03L2806.75-722.03L2806.75-733.36L2993.18-733.36Q3014.81-733.36 3046.23-735.42Q3077.64-737.48 3105.45-737.48L3105.45-737.48Q3162.10-737.48 3211.54-725.12Q3260.98-712.76 3297.03-688.56Q3333.08-664.35 3354.20-628.82Q3375.31-593.28 3375.31-547.96ZM3027.17-721L3027.17-391.40L3143.56-391.40Q3193-391.40 3217.72-427.97Q3242.44-464.53 3242.44-547.96L3242.44-547.96Q3242.44-726.15 3104.42-726.15L3104.42-726.15Q3087.94-726.15 3064.25-724.09Q3040.56-722.03 3027.17-721L3027.17-721Z" fill="#4f3f68"></path></g>
+        <path id="i2T" d="M3631.78-733.36L3944.90-733.36L3944.90-722.03L3852.20-722.03L3852.20-11.33L3944.90-11.33L3944.90 0L3631.78 0L3631.78-11.33L3724.48-11.33L3724.48-722.03L3631.78-722.03L3631.78-733.36Z" fill="#4f3f68"></path>
+        <g id="orsT"><path d="M4814.22-366.68L4814.22-366.68Q4814.22-286.34 4784.35-215.78Q4754.48-145.23 4705.04-93.22Q4655.60-41.20 4591.74-11.33Q4527.88 18.54 4459.90 18.54L4459.90 18.54Q4392.95 18.54 4329.09-10.81Q4265.23-40.17 4215.79-91.67Q4166.35-143.17 4135.97-213.72Q4105.58-284.28 4105.58-366.68L4105.58-366.68Q4105.58-449.08 4134.94-519.63Q4164.29-590.19 4213.73-641.69Q4263.17-693.19 4327.03-722.55Q4390.89-751.90 4459.90-751.90L4459.90-751.90Q4528.91-751.90 4592.77-722.55Q4656.63-693.19 4706.07-641.69Q4755.51-590.19 4784.86-519.63Q4814.22-449.08 4814.22-366.68ZM4459.90 7.21L4459.90 7.21Q4518.61 7.21 4557.75-12.88Q4596.89-32.96 4620.58-74.16L4620.58-74.16Q4633.97-96.82 4643.24-130.81Q4652.51-164.80 4657.66-203.94Q4662.81-243.08 4665.39-285.31Q4667.96-327.54 4667.96-366.68L4667.96-366.68Q4667.96-406.85 4665.39-450.11Q4662.81-493.37 4656.63-534.06Q4650.45-574.74 4640.15-609.76Q4629.85-644.78 4614.40-668.47L4614.40-668.47Q4590.71-706.58 4553.11-723.58Q4515.52-740.57 4458.87-740.57L4458.87-740.57Q4409.43-740.57 4374.41-726.66Q4339.39-712.76 4315.70-683.92L4315.70-683.92Q4297.16-662.29 4285.32-627.27Q4273.47-592.25 4265.74-550.02Q4258.02-507.79 4254.93-460.41Q4251.84-413.03 4251.84-366.68L4251.84-366.68Q4251.84-322.39 4254.41-277.58Q4256.99-232.78 4263.69-191.58Q4270.38-150.38 4281.19-116.39Q4292.01-82.40 4307.46-60.77L4307.46-60.77Q4331.15-26.78 4368.23-9.79Q4405.31 7.21 4459.90 7.21ZM5533.16-547.96L5533.16-547.96Q5533.16-489.25 5483.72-448.56Q5434.28-407.88 5350.85-389.34L5350.85-389.34L5350.85-385.22Q5400.29-376.98 5439.43-363.07Q5478.57-349.17 5504.32-325.48L5504.32-325.48Q5519.77-311.06 5530.59-294.58Q5541.40-278.10 5548.10-255.44Q5554.79-232.78 5557.88-201.88Q5560.97-170.98 5560.97-126.69L5560.97-126.69Q5560.97-88.58 5564.57-64.89Q5568.18-41.20 5575.39-28.32Q5582.60-15.45 5593.41-11.33Q5604.23-7.21 5619.68-7.21L5619.68-7.21Q5636.16-7.21 5648.01-12.36Q5659.85-17.51 5677.36-31.93L5677.36-31.93L5685.60-20.60Q5663.97-4.12 5644.40 2.06Q5624.83 8.24 5592.90 8.24L5592.90 8.24Q5552.73 8.24 5521.32-1.54Q5489.90-11.33 5468.27-33.48Q5446.64-55.62 5434.80-91.16Q5422.95-126.69 5422.95-179.22L5422.95-179.22Q5422.95-222.48 5421.40-251.84Q5419.86-281.19 5415.74-300.25Q5411.62-319.30 5405.95-330.63Q5400.29-341.96 5391.02-350.20L5391.02-350.20Q5360.12-380.07 5301.41-380.07L5301.41-380.07L5185.02-380.07L5185.02-11.33L5278.75-11.33L5278.75 0L4964.60 0L4964.60-11.33L5057.30-11.33L5057.30-722.03L4964.60-722.03L4964.60-733.36L5151.03-733.36Q5172.66-733.36 5204.07-735.42Q5235.49-737.48 5263.30-737.48L5263.30-737.48Q5319.95-737.48 5369.39-725.12Q5418.83-712.76 5454.88-688.56Q5490.93-664.35 5512.05-628.82Q5533.16-593.28 5533.16-547.96ZM5185.02-721L5185.02-391.40L5301.41-391.40Q5350.85-391.40 5375.57-427.97Q5400.29-464.53 5400.29-547.96L5400.29-547.96Q5400.29-726.15 5262.27-726.15L5262.27-726.15Q5245.79-726.15 5222.10-724.09Q5198.41-722.03 5185.02-721L5185.02-721ZM6168.67-718.94L6168.67-718.94Q6182.06-718.94 6190.30-725.12Q6198.54-731.30 6202.66-747.78L6202.66-747.78L6210.90-747.78L6210.90-542.81L6202.66-542.81Q6169.70-650.96 6126.95-695.76Q6084.21-740.57 6027.56-740.57L6027.56-740.57Q6000.78-740.57 5976.57-732.33Q5952.37-724.09 5933.83-708.64Q5915.29-693.19 5903.96-670.01Q5892.63-646.84 5892.63-616.97L5892.63-616.97Q5892.63-585.04 5902.93-560.32Q5913.23-535.60 5936.92-513.97Q5960.61-492.34 6000.78-470.19Q6040.95-448.05 6099.66-422.30L6099.66-422.30Q6134.68-406.85 6162.49-392.43Q6190.30-378.01 6209.87-363.59L6209.87-363.59Q6234.59-345.05 6249.52-326.00Q6264.46-306.94 6271.67-288.40Q6278.88-269.86 6280.94-252.35Q6283-234.84 6283-220.42L6283-220.42Q6283-175.10 6263.43-132.35Q6243.86-89.61 6210.38-56.13Q6176.91-22.66 6132.62-2.06Q6088.33 18.54 6039.92 18.54L6039.92 18.54Q5999.75 18.54 5972.97 12.36Q5946.19 6.18 5925.59-1.03Q5904.99-8.24 5887.48-14.42Q5869.97-20.60 5849.37-20.60L5849.37-20.60Q5830.83-20.60 5821.56-12.88Q5812.29-5.15 5807.14 8.24L5807.14 8.24L5798.90 8.24L5798.90-252.35L5807.14-252.35Q5815.38-194.67 5837.52-147.29Q5859.67-99.91 5891.09-65.41Q5922.50-30.90 5961.13-11.85Q5999.75 7.21 6039.92 7.21L6039.92 7.21Q6074.94 7.21 6105.84-2.58Q6136.74-12.36 6159.40-30.39Q6182.06-48.41 6194.93-74.16Q6207.81-99.91 6207.81-132.87L6207.81-132.87Q6207.81-157.59 6201.63-176.13Q6195.45-194.67 6183.60-208.58Q6171.76-222.48 6155.28-233.81Q6138.80-245.14 6119.23-257.50L6119.23-257.50Q6077-282.22 6028.59-303.33Q5980.18-324.45 5928.68-353.29L5928.68-353.29Q5869.97-386.25 5846.28-425.39Q5822.59-464.53 5822.59-523.24L5822.59-523.24Q5822.59-567.53 5838.55-609.25Q5854.52-650.96 5882.84-682.38Q5911.17-713.79 5949.28-732.85Q5987.39-751.90 6031.68-751.90L6031.68-751.90Q6054.34-751.90 6074.94-746.75Q6095.54-741.60 6113.05-735.42Q6130.56-729.24 6144.98-724.09Q6159.40-718.94 6168.67-718.94Z" fill="#4f3f68"></path></g>
+      </svg>
+      </div>
+      <!-- END GENERATED WORDMARK -->
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="assets/projects/projects-data.js"></script>
+<script src="js/reveal.js"></script>
+<script src="js/main.js"></script>
+<script src="js/projects.js"></script>
+</body>
+</html>

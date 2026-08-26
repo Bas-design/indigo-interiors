@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gallery — Indigo Interiors</title>
+<meta name="description" content="A portfolio of interiors composed by Mia Szukalski — living spaces, colour schemes, wallpaper features and styling across Greater Sydney.">
+<link rel="canonical" href="https://indigointeriors.com.au/gallery.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Indigo Interiors">
+<meta property="og:title" content="Gallery — Indigo Interiors">
+<meta property="og:description" content="A portfolio of interiors composed by Mia Szukalski across Greater Sydney.">
+<meta property="og:url" content="https://indigointeriors.com.au/gallery.html">
+<meta property="og:image" content="https://indigointeriors.com.au/assets/img/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="assets/Indigo-mark.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Poppins (body) + Bodoni Moda ITALIC only (OFL). Romans are Bodidota,
+     self-hosted from assets/; see css/style.css header. -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300&family=Bodoni+Moda:ital,opsz,wght@1,6..96,400..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-grid">
+    <nav class="nav nav--left" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+    </nav>
+    <a class="brand" href="index.html?reveal=1" aria-label="Indigo Interiors home — plays the intro">
+      <img class="brand__mark" src="assets/Indigo-mark.svg" alt="Indigo Interiors">
+    </a>
+    <nav class="nav nav--right" aria-label="Primary">
+      <a href="gallery.html" aria-current="page">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="mobile-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html" aria-current="page">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow" data-reveal>Portfolio</p>
+      <h1 data-reveal>Gallery</h1>
+      <hr class="rule rule--center" data-reveal>
+      <p class="lede" data-reveal>A selection of homes composed by Indigo Interiors. Each project began with a conversation — and ended with a space that feels unmistakably its owner’s.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:1rem">
+    <div class="container">
+
+      <!-- Grid is rendered from assets/projects/ by js/projects.js; each tile
+           links to its project page (project.html?p=<folder>). -->
+      <div class="gallery-grid" data-projects-grid>
+        <noscript><p>The gallery requires JavaScript. Please enable it to browse our projects.</p></noscript>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section section--sand cta-band">
+    <div class="container--narrow">
+      <p class="eyebrow" data-reveal>Your Turn</p>
+      <h2 data-reveal>Imagine your home here.</h2>
+      <p data-reveal>Every project in this gallery started with a single consultation.</p>
+      <a class="btn btn--solid" href="contact.html" data-reveal>Book a Consultation</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html">
+          <img class="brand__mark" src="assets/Indigo-mark.svg" alt="">
+          <span class="brand__name">INDIGO<br>INTERIORS</span>
+        </a>
+        <p class="footer-tagline">Elegant, personal interiors for Greater Sydney — composed by Mia Szukalski.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in Touch</h4>
+        <ul>
+          <li><a href="mailto:mia@indigointeriors.com.au">mia@indigointeriors.com.au</a></li>
+          <li><a href="tel:+61419437772">+61 419 437 772</a></li>
+          <li>Greater Sydney, NSW</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Indigo Interiors. All rights reserved.</span>
+      <span>Interior Decorating · Mia Szukalski</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/projects/projects-data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/projects.js"></script>
+</body>
+</html>

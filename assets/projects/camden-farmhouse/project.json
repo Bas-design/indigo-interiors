@@ -1,0 +1,30 @@
+{
+  "title": "Camden Farmhouse",
+  "category": "colour",
+  "categoryLabel": "Colour & Finishes",
+  "location": "Camden, NSW",
+  "year": "2025",
+  "cover": "01-dining.jpg",
+  "summary": "A heritage farmhouse given a fresh, sunlit colour story — warm whites, natural brick and greenery throughout.",
+  "brief": [
+    "This Camden farmhouse had character to spare — exposed brick, generous windows, and a garden that begged to be let inside. What it lacked was a colour scheme that tied its old and new halves together.",
+    "We developed a palette of warm whites and soft naturals, letting the brickwork and timber speak while bringing light deep into the plan."
+  ],
+  "photos": [
+    {
+      "image": "01-dining.jpg",
+      "heading": "The Dining Room",
+      "text": "Morning light across the brick feature wall. Pendant glassware was chosen to scatter rather than block the sun, keeping the room bright through the day."
+    },
+    {
+      "image": "02-kitchen.jpg",
+      "heading": "The Kitchen",
+      "text": "Painted brick and butcher's-block timber keep the kitchen relaxed and practical — a working farmhouse kitchen, not a showpiece."
+    },
+    {
+      "image": "03-living.jpg",
+      "heading": "The Sitting Room",
+      "text": "The formal sitting room balances the home's heritage side: deeper tones, layered fabrics, and a quieter mood for evenings."
+    }
+  ]
+}

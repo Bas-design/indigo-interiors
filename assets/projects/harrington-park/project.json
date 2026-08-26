@@ -1,0 +1,35 @@
+{
+  "title": "Harrington Park Residence",
+  "category": "living",
+  "categoryLabel": "Living Spaces",
+  "location": "Harrington Park, NSW",
+  "year": "2025",
+  "cover": "01-living.jpg",
+  "summary": "A whole-home refresh for a young family — calm, light-filled living spaces built around texture and natural timber.",
+  "brief": [
+    "The owners of this Harrington Park home came to us with a familiar story: a house full of good bones that never quite felt finished. Rooms were furnished but not composed, and the palette drifted from space to space.",
+    "Our brief was to bring the whole ground floor together — living, dining and kitchen — with a scheme that felt calm and cohesive, without losing the warmth of a family home."
+  ],
+  "photos": [
+    {
+      "image": "01-living.jpg",
+      "heading": "The Living Room",
+      "text": "The living room sets the tone: a soft neutral base, layered textures, and a custom rug that anchors the seating area. Timber and brass details carry through the rest of the home."
+    },
+    {
+      "image": "02-lounge.jpg",
+      "heading": "The Lounge",
+      "text": "Deep, comfortable seating in hard-wearing fabrics — chosen for real family life, not just photographs. The gold accents pick up the afternoon light from the north-facing windows."
+    },
+    {
+      "image": "03-kitchen.jpg",
+      "heading": "The Kitchen",
+      "text": "Finishes in the kitchen were kept crisp and simple, letting the stone island do the talking."
+    },
+    {
+      "image": "04-dining.jpg",
+      "heading": "The Dining Space",
+      "text": "A relaxed dining space that connects indoors and out. The palette repeats the living room's tones so the whole floor reads as one composition."
+    }
+  ]
+}
