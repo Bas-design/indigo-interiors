@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page Not Found — Indigo Interiors</title>
+<meta name="description" content="The page you were looking for could not be found. Browse the Indigo Interiors gallery, services and contact details instead.">
+<!-- A 404 must never be indexed, and takes no canonical: it is served for
+     every bad URL, so a canonical here would consolidate junk URLs into
+     one indexable page. -->
+<meta name="robots" content="noindex, follow">
+<link rel="icon" type="image/svg+xml" href="/assets/Indigo-mark.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Poppins (body) + Bodoni Moda ITALIC only (OFL). Romans are Bodidota,
+     self-hosted from assets/; see css/style.css header. -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300&family=Bodoni+Moda:ital,opsz,wght@1,6..96,400..600&display=swap" rel="stylesheet">
+<!-- EVERY path on this page is ROOT-RELATIVE, unlike the rest of the site.
+     GitHub Pages serves 404.html for a bad URL at any depth
+     (/assets/projects/nope/ included), and relative paths would then
+     resolve against that depth instead of the site root — the stylesheet
+     and logo would 404 inside the 404. Do not "fix" these to match the
+     other pages. -->
+<link rel="stylesheet" href="/css/style.css">
+<style>
+  /* Scoped to this page only — the lost-door panel. Reuses the site's
+     tokens, so it follows any future change to the palette or type. */
+  .lost {
+    text-align: center;
+    padding: clamp(3.5rem, 11vh, 7rem) 0 clamp(2.5rem, 7vh, 4.5rem);
+  }
+  .lost__num {
+    font-family: var(--serif-italic);
+    font-style: italic;
+    font-size: clamp(5.5rem, 19vw, 11rem);
+    line-height: .82;
+    color: var(--gold);
+    margin: 0 0 .35em;
+    /* The numerals are decorative; the <h1> carries the real message. */
+    user-select: none;
+  }
+  .lost__links {
+    list-style: none;
+    margin: 2.75rem 0 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 2.25rem;
+  }
+  .lost__links li { margin: .4rem 0; }
+  .lost__links a {
+    font-family: var(--sans);
+    font-size: .78rem;
+    font-weight: 400;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--indigo);
+    text-decoration: none;
+    padding-bottom: .3rem;
+    border-bottom: 1px solid transparent;
+    transition: border-color .4s var(--ease), color .4s var(--ease);
+  }
+  .lost__links a:hover,
+  .lost__links a:focus-visible { color: var(--indigo-deep); border-bottom-color: var(--gold); }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-grid">
+    <nav class="nav nav--left" aria-label="Primary">
+      <a href="/index.html">Home</a>
+      <a href="/services.html">Services</a>
+    </nav>
+    <a class="brand" href="/index.html?reveal=1" aria-label="Indigo Interiors home — plays the intro">
+      <img class="brand__mark" src="/assets/Indigo-mark.svg" alt="Indigo Interiors">
+    </a>
+    <nav class="nav nav--right" aria-label="Primary">
+      <a href="/gallery.html">Gallery</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="mobile-nav" aria-label="Primary">
+      <a href="/index.html">Home</a>
+      <a href="/services.html">Services</a>
+      <a href="/gallery.html">Gallery</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="lost">
+    <div class="container--narrow">
+      <p class="lost__num" aria-hidden="true" data-reveal>404</p>
+      <p class="eyebrow" data-reveal>Page Not Found</p>
+      <h1 data-reveal>This door leads nowhere.</h1>
+      <hr class="rule rule--center" data-reveal>
+      <p class="lede" data-reveal>The page you were looking for has moved, been renamed, or never existed at all. Nothing is broken — let’s show you back through.</p>
+      <ul class="lost__links" data-reveal>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/services.html">Services</a></li>
+        <li><a href="/gallery.html">Gallery</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section--sand cta-band">
+    <div class="container--narrow">
+      <p class="eyebrow" data-reveal>Still Looking</p>
+      <h2 data-reveal>Every project started with a conversation.</h2>
+      <p data-reveal>Browse the homes Indigo Interiors has composed across Greater Sydney, or get in touch about your own.</p>
+      <a class="btn btn--solid" href="/gallery.html" data-reveal>View the Gallery</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="/index.html">
+          <img class="brand__mark" src="/assets/Indigo-mark.svg" alt="">
+          <span class="brand__name">INDIGO<br>INTERIORS</span>
+        </a>
+        <p class="footer-tagline">Elegant, personal interiors for Greater Sydney — composed by Mia Szukalski.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/gallery.html">Gallery</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in Touch</h4>
+        <ul>
+          <li><a href="mailto:mia@indigointeriors.com.au">mia@indigointeriors.com.au</a></li>
+          <li><a href="tel:+61419437772">+61 419 437 772</a></li>
+          <li>Greater Sydney, NSW</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Indigo Interiors. All rights reserved.</span>
+      <span>Interior Decorating · Mia Szukalski</span>
+    </div>
+  </div>
+</footer>
+
+<!-- main.js only: no projects grid on this page, so projects.js and the
+     data snapshot are not needed. main.js supplies the nav toggle, the
+     custom cursor, the reveal observer and the footer year. -->
+<script src="/js/main.js"></script>
+</body>
+</html>
