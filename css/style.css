@@ -333,21 +333,55 @@ p  { margin: 0 0 1.2em; }
 .site-header.is-open .nav-toggle span:nth-child(2) { opacity: 0; }
 .site-header.is-open .nav-toggle span:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
 
-/* Full-screen mobile menu */
+/* Full-screen mobile menu.
+
+   Sizing note, and it is not optional. .site-header sets
+   `backdrop-filter: blur(8px)`, and an element with a backdrop-filter
+   becomes the containing block for its fixed-position descendants —
+   exactly as `transform` and `filter` do. So `inset: 0` on this element
+   resolved against the 84px header box rather than the viewport: the
+   overlay painted 375x84, "Home" landed at y=-99 (completely above the
+   screen), and the lower links sat on top of page content with no
+   background behind them at all.
+
+   The header is itself pinned to the viewport's top-left
+   (`position: fixed; inset: 0 0 auto 0`) and spans its full width, so
+   top/left/right already resolve where we want them — only the height
+   was wrong. Setting it explicitly fixes the overlay without moving the
+   markup out of the header on all six pages.
+
+   dvh rather than vh: on phones vh means the *largest* possible
+   viewport, so with the address bar on screen the bottom of the menu
+   would sit underneath it. The plain vh line above is the fallback for
+   browsers that do not know dvh. */
 .mobile-nav {
   position: fixed;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2.4rem;
+  /* Clears the header so the links never collide with the logo or the
+     close button, and keeps every link reachable on a short landscape
+     viewport. */
+  padding: var(--header-h) 1.5rem 2rem;
+  overflow-y: auto;
+  overscroll-behavior: contain;
   background: rgba(255, 255, 255, .98);
   opacity: 0;
   pointer-events: none;
   transition: opacity .35s var(--ease);
 }
 .site-header.is-open .mobile-nav { opacity: 1; pointer-events: auto; }
+/* The overlay is a sibling of the brand inside the header, so without
+   this the white background covers the logo while the menu is open and
+   the header reads as empty apart from the close button. */
+.site-header.is-open .brand { position: relative; z-index: 2; }
 .mobile-nav a {
   font-family: var(--serif);
   /* single-weight face — 400 avoids a synthesised bold */
@@ -372,6 +406,20 @@ p  { margin: 0 0 1.2em; }
   .nav-toggle { display: block; grid-column: 3; justify-self: end; }
   .header-grid .brand { grid-column: 2; }
   .header-grid .brand__mark { width: 36px; }
+}
+
+/* Short viewports — a phone held in landscape. At 320px tall the header
+   alone is a quarter of the screen, and the menu at full size needed
+   283px for 204px of room, which pushed "Contact" below the fold: the
+   overlay scrolled, but a four-item menu should never ask for a scroll.
+   Tightened so all four links fit without one. The top padding still
+   clears the close button, which sits 22-62px down inside the header. */
+@media (max-width: 860px) and (max-height: 480px) {
+  .mobile-nav {
+    gap: 1.1rem;
+    padding: 64px 1.5rem 1rem;
+  }
+  .mobile-nav a { font-size: 1.15rem; }
 }
 
 /* ---------- Hero (home) ---------- */
