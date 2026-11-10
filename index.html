@@ -211,7 +211,13 @@
         <p class="eyebrow" data-reveal>Kind Words</p>
         <h2 data-reveal>From Our Clients</h2>
       </div>
-      <div class="testimonial-grid">
+      <!-- Rendered from assets/content/testimonials.json by js/main.js so
+           Mia can edit the words in Indigo Studio. The three below are the
+           fallback: they show if the JSON cannot be read (no JavaScript, or
+           the page opened straight from disk), so the section is never
+           empty. Edit the JSON, not these — the JSON wins whenever it
+           loads. -->
+      <div class="testimonial-grid" data-testimonials>
         <blockquote class="testimonial" data-reveal style="--d:0s">
           <p>“Mia understood our home better than we did. Every colour, every fabric — it all just works. We can’t imagine the house any other way.”</p>
           <cite>Sarah &amp; James · Harrington Park</cite>

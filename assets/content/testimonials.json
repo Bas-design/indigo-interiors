@@ -1,0 +1,20 @@
+{
+  "_comment": "Edited through Indigo Studio. The quotation marks are added by the site, so write the quote as plain text without them.",
+  "testimonials": [
+    {
+      "quote": "Mia understood our home better than we did. Every colour, every fabric — it all just works. We can’t imagine the house any other way.",
+      "name": "Sarah & James",
+      "location": "Harrington Park"
+    },
+    {
+      "quote": "The wallpaper and paint scheme completely transformed our living areas. Professional, warm, and worth every cent.",
+      "name": "Priya",
+      "location": "Oran Park"
+    },
+    {
+      "quote": "From the first consultation to the final cushion, the process was effortless. Our pantry and wardrobes finally make sense.",
+      "name": "The Nguyen Family",
+      "location": "Camden"
+    }
+  ]
+}

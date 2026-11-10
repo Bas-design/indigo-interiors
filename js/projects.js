@@ -5,7 +5,8 @@
    - the featured strip on the home page (index.html)
    - a single project page (project.html?p=<folder-name>)
    Projects are plain folders: photos + one project.json each.
-   See assets/projects/HOW-TO-ADD-A-PROJECT.md for the workflow.
+   Projects are added through Indigo Studio (tools/studio in the
+     private repo); see its MIA-GUIDE.md for the workflow.
 
    Data source: fetch() of the JSON files. When the site is opened
    from the file system (file://), fetch is blocked, so we fall back

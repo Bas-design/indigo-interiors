@@ -243,6 +243,60 @@
     });
   }
 
+  /* ---------- Testimonials (home) ----------
+     The words live in assets/content/testimonials.json so they can be
+     edited in Indigo Studio without touching index.html — the Studio is
+     deliberately not allowed to write hand-authored pages.
+
+     index.html ships the current three as static markup. They render
+     immediately and remain if this fetch fails (no JavaScript, or the
+     page opened from the file system), so the section is never blank;
+     the JSON replaces them when it loads. */
+  var tgrid = document.querySelector('[data-testimonials]');
+  if (tgrid && window.fetch) {
+    fetch('assets/content/testimonials.json', { cache: 'no-cache' })
+      .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+      .then(function (data) {
+        var list = (data && data.testimonials) || [];
+        if (!list.length) return;               // keep the fallback markup
+
+        var frag = document.createDocumentFragment();
+        list.forEach(function (t, i) {
+          if (!t || !String(t.quote || '').trim()) return;
+          var q = document.createElement('blockquote');
+          q.className = 'testimonial';
+          q.setAttribute('data-reveal', '');
+          q.style.setProperty('--d', (i * 0.12) + 's');
+
+          var p = document.createElement('p');
+          // Curly quotes are added here so Mia never has to type them.
+          p.textContent = '“' + String(t.quote).trim() + '”';
+          q.appendChild(p);
+
+          var who = [t.name, t.location].map(function (s) {
+            return String(s || '').trim();
+          }).filter(Boolean).join(' · ');
+          if (who) {
+            var cite = document.createElement('cite');
+            cite.textContent = who;
+            q.appendChild(cite);
+          }
+          frag.appendChild(q);
+        });
+
+        if (!frag.childNodes.length) return;    // nothing usable; keep fallback
+        tgrid.innerHTML = '';
+        tgrid.appendChild(frag);
+
+        /* The reveal observer in this file ran before these existed, so
+           show them directly rather than leaving them faded out. */
+        tgrid.querySelectorAll('.testimonial').forEach(function (el) {
+          el.classList.add('in-view');
+        });
+      })
+      .catch(function () { /* keep the markup already on the page */ });
+  }
+
   /* ---------- Footer year ---------- */
   var yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
