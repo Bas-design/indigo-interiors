@@ -3,32 +3,12 @@
    unavailable (viewing the site from the file system). */
 window.INDIGO_PROJECTS = {
   "order": [
-    "lakeview-place",
     "harrington-park",
     "camden-farmhouse",
     "oran-park-townhome",
     "narellan-wardrobe"
   ],
   "data": {
-    "lakeview-place": {
-      "title": "Lakeview Place",
-      "category": "living",
-      "categoryLabel": "Living Spaces",
-      "location": "Glen Alpine",
-      "year": "2026",
-      "cover": "01-20201225-173157.jpg",
-      "summary": "Beautiful home",
-      "brief": [
-        "Inser design brief here"
-      ],
-      "photos": [
-        {
-          "image": "01-20201225-173157.jpg",
-          "heading": "Christmas Tree",
-          "text": "christmas 2020"
-        }
-      ]
-    },
     "harrington-park": {
       "title": "Harrington Park Residence",
       "category": "living",
