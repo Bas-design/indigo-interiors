@@ -1,0 +1,19 @@
+{
+  "title": "Lakeview Place",
+  "category": "living",
+  "categoryLabel": "Living Spaces",
+  "location": "Glen Alpine",
+  "year": "2026",
+  "cover": "01-20201225-173157.jpg",
+  "summary": "Beautiful home",
+  "brief": [
+    "Inser design brief here"
+  ],
+  "photos": [
+    {
+      "image": "01-20201225-173157.jpg",
+      "heading": "Christmas Tree",
+      "text": "christmas 2020"
+    }
+  ]
+}
