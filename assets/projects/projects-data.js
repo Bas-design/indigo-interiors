@@ -3,12 +3,37 @@
    unavailable (viewing the site from the file system). */
 window.INDIGO_PROJECTS = {
   "order": [
+    "narellan-wardrobe",
     "harrington-park",
     "camden-farmhouse",
-    "oran-park-townhome",
-    "narellan-wardrobe"
+    "oran-park-townhome"
   ],
   "data": {
+    "narellan-wardrobe": {
+      "title": "Narellan Walk-in Wardrobe",
+      "category": "organisation",
+      "categoryLabel": "Organisation",
+      "location": "Narellan, NSW",
+      "year": "2024",
+      "cover": "01-bedroom.jpg",
+      "summary": "A master suite reworked around a custom wardrobe system — storage that finally fits the way its owners actually live.",
+      "brief": [
+        "The brief was simple to say and hard to do: make the morning routine effortless. The master suite had plenty of storage on paper, but none of it suited how the owners actually dressed, packed and travelled.",
+        "We designed a custom wardrobe system and reorganised the suite around it, down to drawer inserts and lighting."
+      ],
+      "photos": [
+        {
+          "image": "01-bedroom.jpg",
+          "heading": "The Master Suite",
+          "text": "Built-in wardrobes in a soft white keep the room feeling larger, with everyday items at hand height and seasonal storage above."
+        },
+        {
+          "image": "02-kitchen.jpg",
+          "heading": "The Butler's Pantry",
+          "text": "The same thinking carried into the kitchen: open shelving for the things used daily, closed storage for everything else."
+        }
+      ]
+    },
     "harrington-park": {
       "title": "Harrington Park Residence",
       "category": "living",
@@ -101,31 +126,6 @@ window.INDIGO_PROJECTS = {
           "image": "03-bedroom.jpg",
           "heading": "The Guest Bedroom",
           "text": "Guest bedroom styled for Airbnb-readiness: durable layers, calm tones, and nothing precious."
-        }
-      ]
-    },
-    "narellan-wardrobe": {
-      "title": "Narellan Walk-in Wardrobe",
-      "category": "organisation",
-      "categoryLabel": "Organisation",
-      "location": "Narellan, NSW",
-      "year": "2024",
-      "cover": "01-bedroom.jpg",
-      "summary": "A master suite reworked around a custom wardrobe system — storage that finally fits the way its owners actually live.",
-      "brief": [
-        "The brief was simple to say and hard to do: make the morning routine effortless. The master suite had plenty of storage on paper, but none of it suited how the owners actually dressed, packed and travelled.",
-        "We designed a custom wardrobe system and reorganised the suite around it, down to drawer inserts and lighting."
-      ],
-      "photos": [
-        {
-          "image": "01-bedroom.jpg",
-          "heading": "The Master Suite",
-          "text": "Built-in wardrobes in a soft white keep the room feeling larger, with everyday items at hand height and seasonal storage above."
-        },
-        {
-          "image": "02-kitchen.jpg",
-          "heading": "The Butler's Pantry",
-          "text": "The same thinking carried into the kitchen: open shelving for the things used daily, closed storage for everything else."
         }
       ]
     }
