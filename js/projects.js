@@ -15,7 +15,13 @@
 (function () {
   'use strict';
 
-  var BASE = 'assets/projects/';
+  /* Generated project pages live two levels down at /projects/<slug>/
+     and set INDIGO_BASE_PREFIX to '../../' before this script runs. The
+     root-level pages never define it, so they get '' and nothing about
+     them changes. Relative rather than root-relative throughout, so the
+     site still works opened straight from disk. */
+  var PREFIX = window.INDIGO_BASE_PREFIX || '';
+  var BASE = PREFIX + 'assets/projects/';
 
   function fetchJSON(url) {
     return fetch(url, { cache: 'no-cache' }).then(function (r) {
@@ -91,7 +97,7 @@
 
   function tile(p, delay) {
     var item = el('a', 'gallery-item');
-    item.href = 'project.html?p=' + encodeURIComponent(p.slug);
+    item.href = PREFIX + 'projects/' + encodeURIComponent(p.slug) + '/';
     item.dataset.category = p.category || '';
     item.style.setProperty('--d', delay + 's');
 
@@ -156,16 +162,23 @@
        so these are picked up on the second-wave index) */
     var desc = document.querySelector('meta[name="description"]');
     if (desc && p.summary) desc.setAttribute('content', p.summary);
-    var canon = document.querySelector('link[rel="canonical"]');
-    if (canon) {
-      canon.setAttribute('href',
-        canon.getAttribute('href').split('?')[0] + '?p=' + encodeURIComponent(p.slug));
+    /* On a generated page the canonical is already correct and baked
+       in, so leave it alone. On the legacy project.html?p=<slug> URL,
+       point it at the generated page — that is the real address, and
+       without this every project claimed /project.html as its
+       canonical and invited Google to collapse them into one. */
+    if (!window.INDIGO_PROJECT_SLUG) {
+      var canon = document.querySelector('link[rel="canonical"]');
+      if (canon) {
+        canon.setAttribute('href',
+          'https://indigointeriors.com.au/projects/' + encodeURIComponent(p.slug) + '/');
+      }
     }
 
     var head = el('section', 'page-hero');
     var headWrap = el('div', 'container');
     var back = el('a', 'project-back-top');
-    back.href = 'gallery.html';
+    back.href = PREFIX + 'gallery.html';
     back.setAttribute('aria-label', 'Back to gallery');
     back.innerHTML =
       '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6">' +
@@ -266,7 +279,11 @@
   }
 
   if (page) {
-    var slug = new URLSearchParams(location.search).get('p');
+    /* A generated page at /projects/<slug>/ declares its own slug; the
+       older project.html?p=<slug> URL still carries it in the query
+       string and keeps working. */
+    var slug = window.INDIGO_PROJECT_SLUG ||
+               new URLSearchParams(location.search).get('p');
     if (!slug || /[^a-z0-9-]/.test(slug)) {
       renderNotFound(page);
     } else {

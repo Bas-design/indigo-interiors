@@ -20,7 +20,7 @@ var urls = [
   { loc: '/contact.html', priority: '0.8' }
 ];
 list.projects.forEach(function (slug) {
-  urls.push({ loc: '/project.html?p=' + slug, priority: '0.6' });
+  urls.push({ loc: '/projects/' + slug + '/', priority: '0.6' });
 });
 
 var today = new Date().toISOString().slice(0, 10);
